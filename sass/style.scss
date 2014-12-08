@@ -8,37 +8,106 @@
 $text-color: #3e3e3e;
 $light-text-color: #dddddd;
 $body-color: #2f2f2f;
+$highlight-color: hsl(220, 100%, 60%);
 
 body {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 	font-size: 62.5%;
 	font-weight: lighter;
 	text-align: center;
 	color: $text-color;
 }
 
+@mixin headline() {
+	&:after {
+		width: 2em;
+		height: .1em;
+		margin: .3em auto;
+		display: block;
+		content: "";
+		background-color: $highlight-color;
+	}	
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.hero {
+	position: relative;
+	background-color: $body-color;
+	z-index: 1;
+	nav {
+		padding: 2em;
+
+		li {
+			float: left;
+			a {
+				font-size: 2em;
+				display: inline-block;
+				padding: .5em 1em;
+
+				&:hover {
+					color: $highlight-color;
+				}
+			}
+			@include clearfix;
+		}
+		
+		@include clearfix;
+	}
+
+	h1 {
+		font-size: 8em;
+		font-weight: normal;
+		padding: 2.4em 0 1.4em 0;
+		text-transform: uppercase;
+		color: white;
+	}
+	
+	&:after {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: .2;
+		display: block;
+		content: "";
+		background: url("../images/hero.jpg");
+		background-size: cover;
+		z-index: -1;
+	}
+
+	p {
+		font-size: 2em;
+		color: white;
+		padding: 0 8em 6em 8em;
+		line-height: 1.4;
+
+		.link {
+			color: $highlight-color;
+		}
+	}
+}
+
 .cases {
-	padding: 2em 0;
+	padding: 3em 0;
 	
 	h2 {
+		color: $highlight-color;
 		font-size: 3em;
 		padding: 1em 0;
 		text-transform: uppercase;
-
-		&:after {
-			width: 2em;
-			height: .1em;
-			margin: .3em auto;
-			display: block;
-			content: "";
-			background-color: $text-color;
-		}
+		
+		@include headline;
 	}
 
 	li {
 		float: left;
 		width: 25%;
-		height: 20em;
+		height: 25em;
 		overflow: hidden;
 
 		.case {
@@ -56,7 +125,7 @@ body {
 		.information {
 			position: absolute;
 			background-color: $text-color;
-			top:-20em;
+			top:-25em;
 			left:0;
 			width: 100%;
 			height: 100%;
@@ -74,22 +143,24 @@ body {
 
 			.actions {
 				text-align: center;
-				width: 10em;
+				width: 90%;
 				margin: 0 auto;
-				padding: 3em 0;
+				padding: 5em 0;
 
 				span {
 					font-size: 2em;
 					display: inline-block;
-					border: 1px solid white;
+					border: 1px solid transparent;
 					@include border-radius(100%);
-					padding: .2em;
+					padding: .3em;
 					margin-right: 1em;
 					transition: all .3s ease-in-out;
+					cursor: pointer;
 
 					&:hover {
 						color: white;
-						border: 1px solid white;
+						background-color: $highlight-color;
+						border: 1px solid $highlight-color;
 					}
 				}
 			}
@@ -124,4 +195,15 @@ body {
 	}
 
 	@include clearfix;
+}
+
+footer {
+	font-size: 2em;
+	background-color: $body-color;
+	color: white;
+
+	.link {
+		color: $highlight-color;
+	}
+	padding: 2em 0;
 }

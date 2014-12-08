@@ -65,8 +65,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?-tazh2a");
-  src: url("../fonts/icomoon.eot?#iefix-tazh2a") format("embedded-opentype"), url("../fonts/icomoon.woff?-tazh2a") format("woff"), url("../fonts/icomoon.ttf?-tazh2a") format("truetype"), url("../fonts/icomoon.svg?-tazh2a#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?200299");
+  src: url("../fonts/icomoon.eot?#iefix200299") format("embedded-opentype"), url("../fonts/icomoon.woff?200299") format("woff"), url("../fonts/icomoon.ttf?200299") format("truetype"), url("../fonts/icomoon.svg?200299#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -85,266 +85,350 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 26, ../sass/icomoon.scss */
+.icon-zoom-out:before {
+  content: "\e62b";
+}
+
+/* line 29, ../sass/icomoon.scss */
+.icon-zoom-in:before {
+  content: "\e62c";
+}
+
+/* line 32, ../sass/icomoon.scss */
+.icon-open:before {
+  content: "\e62a";
+}
+
+/* line 35, ../sass/icomoon.scss */
 .icon-circle-o-notch:before {
   content: "\e625";
 }
 
-/* line 29, ../sass/icomoon.scss */
+/* line 38, ../sass/icomoon.scss */
 .icon-google-plus:before {
   content: "\e601";
 }
 
-/* line 32, ../sass/icomoon.scss */
+/* line 41, ../sass/icomoon.scss */
 .icon-email:before {
   content: "\e602";
 }
 
-/* line 35, ../sass/icomoon.scss */
+/* line 44, ../sass/icomoon.scss */
 .icon-github:before {
   content: "\e603";
 }
 
-/* line 38, ../sass/icomoon.scss */
+/* line 47, ../sass/icomoon.scss */
 .icon-sina-weibo:before {
   content: "\e604";
 }
 
-/* line 41, ../sass/icomoon.scss */
+/* line 50, ../sass/icomoon.scss */
 .icon-pencil:before {
   content: "\e611";
 }
 
-/* line 44, ../sass/icomoon.scss */
+/* line 53, ../sass/icomoon.scss */
 .icon-quill:before {
   content: "\e61d";
 }
 
-/* line 47, ../sass/icomoon.scss */
+/* line 56, ../sass/icomoon.scss */
 .icon-books:before {
   content: "\e623";
 }
 
-/* line 50, ../sass/icomoon.scss */
+/* line 59, ../sass/icomoon.scss */
 .icon-tag:before {
   content: "\e612";
 }
 
-/* line 53, ../sass/icomoon.scss */
+/* line 62, ../sass/icomoon.scss */
 .icon-address-book:before {
   content: "\e613";
 }
 
-/* line 56, ../sass/icomoon.scss */
+/* line 65, ../sass/icomoon.scss */
 .icon-bell:before {
   content: "\e61e";
 }
 
-/* line 59, ../sass/icomoon.scss */
+/* line 68, ../sass/icomoon.scss */
 .icon-mobile:before {
   content: "\e606";
 }
 
-/* line 62, ../sass/icomoon.scss */
+/* line 71, ../sass/icomoon.scss */
 .icon-redo:before {
   content: "\e61f";
 }
 
-/* line 65, ../sass/icomoon.scss */
+/* line 74, ../sass/icomoon.scss */
 .icon-user:before {
   content: "\e61c";
 }
 
-/* line 68, ../sass/icomoon.scss */
+/* line 77, ../sass/icomoon.scss */
 .icon-users:before {
   content: "\e607";
 }
 
-/* line 71, ../sass/icomoon.scss */
+/* line 80, ../sass/icomoon.scss */
 .icon-search:before {
   content: "\e620";
 }
 
-/* line 74, ../sass/icomoon.scss */
+/* line 83, ../sass/icomoon.scss */
 .icon-wrench:before {
   content: "\e624";
 }
 
-/* line 77, ../sass/icomoon.scss */
+/* line 86, ../sass/icomoon.scss */
 .icon-list:before {
   content: "\e614";
 }
 
-/* line 80, ../sass/icomoon.scss */
+/* line 89, ../sass/icomoon.scss */
 .icon-flag:before {
   content: "\e608";
 }
 
-/* line 83, ../sass/icomoon.scss */
+/* line 92, ../sass/icomoon.scss */
 .icon-heart:before {
   content: "\e615";
 }
 
-/* line 86, ../sass/icomoon.scss */
+/* line 95, ../sass/icomoon.scss */
 .icon-thumbs-up:before {
   content: "\e616";
 }
 
-/* line 89, ../sass/icomoon.scss */
+/* line 98, ../sass/icomoon.scss */
 .icon-close:before {
   content: "\e60e";
 }
 
-/* line 92, ../sass/icomoon.scss */
+/* line 101, ../sass/icomoon.scss */
 .icon-minus:before {
   content: "\e60f";
 }
 
-/* line 95, ../sass/icomoon.scss */
+/* line 104, ../sass/icomoon.scss */
 .icon-plus:before {
   content: "\e610";
 }
 
-/* line 98, ../sass/icomoon.scss */
+/* line 107, ../sass/icomoon.scss */
 .icon-loop:before {
   content: "\e617";
 }
 
-/* line 101, ../sass/icomoon.scss */
+/* line 110, ../sass/icomoon.scss */
 .icon-arrow-up:before {
   content: "\e626";
 }
 
-/* line 104, ../sass/icomoon.scss */
+/* line 113, ../sass/icomoon.scss */
 .icon-arrow-down:before {
   content: "\e627";
 }
 
-/* line 107, ../sass/icomoon.scss */
+/* line 116, ../sass/icomoon.scss */
 .icon-facebook:before {
   content: "\e605";
 }
 
-/* line 110, ../sass/icomoon.scss */
+/* line 119, ../sass/icomoon.scss */
 .icon-twitter:before {
   content: "\e618";
 }
 
-/* line 113, ../sass/icomoon.scss */
+/* line 122, ../sass/icomoon.scss */
 .icon-skype:before {
   content: "\e600";
 }
 
-/* line 116, ../sass/icomoon.scss */
+/* line 125, ../sass/icomoon.scss */
 .icon-maximize:before {
   content: "\e621";
 }
 
-/* line 119, ../sass/icomoon.scss */
+/* line 128, ../sass/icomoon.scss */
 .icon-star:before {
   content: "\e609";
 }
 
-/* line 122, ../sass/icomoon.scss */
+/* line 131, ../sass/icomoon.scss */
 .icon-video:before {
   content: "\e60a";
 }
 
-/* line 125, ../sass/icomoon.scss */
+/* line 134, ../sass/icomoon.scss */
 .icon-settings:before {
   content: "\e60b";
 }
 
-/* line 128, ../sass/icomoon.scss */
+/* line 137, ../sass/icomoon.scss */
 .icon-lock:before {
   content: "\e60c";
 }
 
-/* line 131, ../sass/icomoon.scss */
+/* line 140, ../sass/icomoon.scss */
 .icon-world:before {
   content: "\e60d";
 }
 
-/* line 134, ../sass/icomoon.scss */
+/* line 143, ../sass/icomoon.scss */
 .icon-cross:before {
   content: "\e619";
 }
 
-/* line 137, ../sass/icomoon.scss */
+/* line 146, ../sass/icomoon.scss */
 .icon-min:before {
   content: "\e61a";
 }
 
-/* line 140, ../sass/icomoon.scss */
+/* line 149, ../sass/icomoon.scss */
 .icon-max:before {
   content: "\e61b";
 }
 
-/* line 143, ../sass/icomoon.scss */
+/* line 152, ../sass/icomoon.scss */
 .icon-arrow-down2:before {
   content: "\e628";
 }
 
-/* line 146, ../sass/icomoon.scss */
+/* line 155, ../sass/icomoon.scss */
 .icon-arrow-up2:before {
   content: "\e629";
 }
 
-/* line 149, ../sass/icomoon.scss */
+/* line 158, ../sass/icomoon.scss */
 .icon-ellipsis:before {
   content: "\e622";
 }
 
-/* line 12, ../sass/style.scss */
+/* line 13, ../sass/style.scss */
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 62.5%;
   font-weight: lighter;
   text-align: center;
   color: #3e3e3e;
 }
 
-/* line 20, ../sass/style.scss */
-.cases {
-  padding: 2em 0;
+/* line 32, ../sass/style.scss */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 37, ../sass/style.scss */
+.hero {
+  position: relative;
+  background-color: #2f2f2f;
+  z-index: 1;
+}
+/* line 41, ../sass/style.scss */
+.hero nav {
+  padding: 2em;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 23, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
+.hero nav li {
+  float: left;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 46, ../sass/style.scss */
+.hero nav li a {
+  font-size: 2em;
+  display: inline-block;
+  padding: .5em 1em;
+}
+/* line 51, ../sass/style.scss */
+.hero nav li a:hover {
+  color: #3377ff;
+}
+/* line 61, ../sass/style.scss */
+.hero h1 {
+  font-size: 8em;
+  font-weight: normal;
+  padding: 2.4em 0 1.4em 0;
+  text-transform: uppercase;
+  color: white;
+}
+/* line 69, ../sass/style.scss */
+.hero:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .2;
+  display: block;
+  content: "";
+  background: url("../images/hero.jpg");
+  background-size: cover;
+  z-index: -1;
+}
+/* line 83, ../sass/style.scss */
+.hero p {
+  font-size: 2em;
+  color: white;
+  padding: 0 8em 6em 8em;
+  line-height: 1.4;
+}
+/* line 89, ../sass/style.scss */
+.hero p .link {
+  color: #3377ff;
+}
+
+/* line 95, ../sass/style.scss */
+.cases {
+  padding: 3em 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 98, ../sass/style.scss */
 .cases h2 {
+  color: #3377ff;
   font-size: 3em;
   padding: 1em 0;
   text-transform: uppercase;
 }
-/* line 28, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 .cases h2:after {
   width: 2em;
   height: .1em;
   margin: .3em auto;
   display: block;
   content: "";
-  background-color: #3e3e3e;
+  background-color: #3377ff;
 }
-/* line 38, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .cases li {
   float: left;
   width: 25%;
-  height: 20em;
+  height: 25em;
   overflow: hidden;
   position: relative;
 }
-/* line 44, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 .cases li .case {
   width: 100%;
 }
-/* line 51, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .cases li:hover .information {
   top: 0;
 }
-/* line 56, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 .cases li .information {
   position: absolute;
   background-color: #3e3e3e;
-  top: -20em;
+  top: -25em;
   left: 0;
   width: 100%;
   height: 100%;
@@ -355,41 +439,43 @@ body {
   box-sizing: border-box;
   color: white;
 }
-/* line 70, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 .cases li .information h3 {
   font-size: 2em;
   padding: 1em 0;
 }
-/* line 75, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 .cases li .information .actions {
   text-align: center;
-  width: 10em;
+  width: 90%;
   margin: 0 auto;
-  padding: 3em 0;
+  padding: 5em 0;
 }
-/* line 81, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .cases li .information .actions span {
   font-size: 2em;
   display: inline-block;
-  border: 1px solid white;
+  border: 1px solid transparent;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   border-radius: 100%;
-  padding: .2em;
+  padding: .3em;
   margin-right: 1em;
   transition: all .3s ease-in-out;
+  cursor: pointer;
 }
-/* line 90, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .cases li .information .actions span:hover {
   color: white;
-  border: 1px solid white;
+  background-color: #3377ff;
+  border: 1px solid #3377ff;
 }
-/* line 97, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 .cases li .information .detail {
   position: relative;
   padding-top: 2em;
 }
-/* line 100, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 .cases li .information .detail .avator {
   position: absolute;
   width: 2em;
@@ -398,21 +484,33 @@ body {
   -webkit-border-radius: 100%;
   border-radius: 100%;
 }
-/* line 106, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 .cases li .information .detail .contact {
   margin-left: 2.5em;
 }
-/* line 108, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .cases li .information .detail .contact .name {
   font-weight: bold;
   margin-right: .5em;
 }
-/* line 113, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 .cases li .information .detail .contact .role {
   color: #dddddd;
 }
-/* line 117, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 .cases li .information .detail .contact .date {
   color: #dddddd;
   float: right;
+}
+
+/* line 200, ../sass/style.scss */
+footer {
+  font-size: 2em;
+  background-color: #2f2f2f;
+  color: white;
+  padding: 2em 0;
+}
+/* line 205, ../sass/style.scss */
+footer .link {
+  color: #3377ff;
 }
