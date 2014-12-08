@@ -63,7 +63,116 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 4, ../sass/style.scss */
+/* line 9, ../sass/style.scss */
 body {
+  font-family: 'PT Sans', sans-serif;
   font-size: 62.5%;
+  font-weight: lighter;
+  text-align: center;
+  color: #3e3e3e;
+}
+
+/* line 17, ../sass/style.scss */
+.hero {
+  background-color: #2f2f2f;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+/* line 23, ../sass/style.scss */
+.hero:after {
+  position: absolute;
+  background: url("../images/hero.jpg");
+  background-size: cover;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .4;
+}
+/* line 37, ../sass/style.scss */
+.hero link, .hero nav li a {
+  text-decoration: none;
+  display: block;
+  font-size: 1.5em;
+  color: #3e3e3e;
+}
+/* line 45, ../sass/style.scss */
+.hero nav li {
+  float: left;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 48, ../sass/style.scss */
+.hero nav li a {
+  color: white;
+  padding: 1em 2em;
+  transition: all .3s ease-in-out;
+}
+/* line 54, ../sass/style.scss */
+.hero nav li a:hover {
+  color: #2f2f2f;
+  background-color: white;
+}
+/* line 65, ../sass/style.scss */
+.hero h1 {
+  font-size: 6em;
+  padding: 3em 0 1em 0;
+  text-transform: uppercase;
+}
+/* line 71, ../sass/style.scss */
+.hero p {
+  font-size: 1.5em;
+  padding: 0 0 8em 0;
+}
+
+/* line 77, ../sass/style.scss */
+.cases {
+  padding: 2em;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 80, ../sass/style.scss */
+.cases h2 {
+  font-size: 3em;
+  padding: 1em 0;
+  text-transform: uppercase;
+}
+/* line 86, ../sass/style.scss */
+.cases li {
+  float: left;
+  width: 25%;
+}
+/* line 90, ../sass/style.scss */
+.cases li .case {
+  padding: 1em;
+}
+/* line 92, ../sass/style.scss */
+.cases li .case img {
+  width: 90%;
+  border: 1px solid #3e3e3e;
+}
+/* line 97, ../sass/style.scss */
+.cases li .case .detail {
+  padding: 2em 0;
+  position: relative;
+}
+/* line 101, ../sass/style.scss */
+.cases li .case .detail .avator {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  top: 2em;
+  left: 1em;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+/* line 110, ../sass/style.scss */
+.cases li .case .detail p {
+  margin-left: 5em;
+  text-align: left;
 }
