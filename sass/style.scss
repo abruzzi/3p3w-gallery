@@ -3,7 +3,10 @@
 
 @import "compass/utilities/general/clearfix";
 
+@import "icomoon";
+
 $text-color: #3e3e3e;
+$light-text-color: #dddddd;
 $body-color: #2f2f2f;
 
 body {
@@ -14,106 +17,109 @@ body {
 	color: $text-color;
 }
 
-.hero {
-	background-color: $body-color;
-	color: white;
-	position: relative;
-	z-index: 1;
-
-	&:after {
-		position: absolute;
-		background: url('../images/hero.jpg');
-		background-size: cover;
-		content: "";
-		display: block;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-		opacity: .4;
-	}
-
-	link {
-		text-decoration: none;
-		display: block;
-		font-size: 1.5em;
-		color: $text-color;
-	}
-
-	nav {
-		li {
-			float: left;
-
-			a {
-				@extend link;
-				color: white;
-				padding: 1em 2em;
-				transition: all .3s ease-in-out;
-
-				&:hover {
-					color: $body-color;
-					background-color: white;
-				}
-			}
-
-			@include clearfix;
-		}
-	}
-
-
-	h1 {
-		font-size: 6em;
-		padding: 3em 0 1em 0;
-		text-transform: uppercase;
-	}
-
-	p {
-		font-size: 1.5em;
-		padding: 0 0 8em 0;
-	}
-}
-
 .cases {
-	padding: 2em;
+	padding: 2em 0;
 	
 	h2 {
 		font-size: 3em;
 		padding: 1em 0;
 		text-transform: uppercase;
+
+		&:after {
+			width: 2em;
+			height: .1em;
+			margin: .3em auto;
+			display: block;
+			content: "";
+			background-color: $text-color;
+		}
 	}
 
 	li {
 		float: left;
 		width: 25%;
+		height: 20em;
+		overflow: hidden;
 
 		.case {
-			padding: 1em;
-			img {
-				width: 90%;
-				border: 1px solid $text-color;
-			}
-			
-			.detail {
-				padding: 2em 0;
-				position: relative;
+			width: 100%;
+		}
+		
+		position: relative;
 
+		&:hover {
+			.information {
+				top:0;
+			}
+		}
+
+		.information {
+			position: absolute;
+			background-color: $text-color;
+			top:-20em;
+			left:0;
+			width: 100%;
+			height: 100%;
+			opacity: .9;
+			transition: all .4s ease-in-out;
+			text-align: left;
+			padding: 0 1em;
+			box-sizing: border-box;
+			color: white;
+
+			h3 {
+				font-size: 2em;
+				padding: 1em 0;
+			}
+
+			.actions {
+				text-align: center;
+				width: 10em;
+				margin: 0 auto;
+				padding: 3em 0;
+
+				span {
+					font-size: 2em;
+					display: inline-block;
+					border: 1px solid white;
+					@include border-radius(100%);
+					padding: .2em;
+					margin-right: 1em;
+					transition: all .3s ease-in-out;
+
+					&:hover {
+						color: white;
+						border: 1px solid white;
+					}
+				}
+			}
+
+			.detail {
+				position: relative;
+				padding-top: 2em;
 				.avator {
 					position: absolute;
-					width: 3em;
-					height: 3em;
-					top: 2em;
-					left: 1em;
+					width: 2em;
+					height: 2em;
 					@include border-radius(100%);
 				}
+				.contact {
+					margin-left: 2.5em;
+					.name {
+						font-weight: bold;
+						margin-right: .5em;
+					}
+					
+					.role {
+						color: $light-text-color;
+					}
 
-				p {
-					margin-left: 5em;
-					text-align: left;
+					.date {
+						color: $light-text-color;	
+						float: right;
+					}
 				}
 			}
-
-			
 		}
 	}
 
