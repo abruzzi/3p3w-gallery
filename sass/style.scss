@@ -10,12 +10,39 @@ $light-text-color: #dddddd;
 $body-color: #2f2f2f;
 $highlight-color: hsl(220, 100%, 60%);
 
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+$break-small: 320px;
+$break-large: 1024px;
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
+
 body {
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 62.5%;
-	font-weight: lighter;
+	font-weight: normal;
 	text-align: center;
 	color: $text-color;
+	@include font-smoothing;
 }
 
 @mixin headline() {
@@ -25,7 +52,7 @@ body {
 		margin: .3em auto;
 		display: block;
 		content: "";
-		background-color: $highlight-color;
+		background-color: $light-text-color;
 	}	
 }
 
@@ -107,6 +134,16 @@ a {
 	li {
 		float: left;
 		width: 25%;
+
+		@include respond-to(handhelds) {
+			float: none;
+			width: 100%;
+		}
+
+		@include respond-to(medium-screens) {
+			width: 50%;
+		}
+
 		height: 25em;
 		overflow: hidden;
 
@@ -170,12 +207,12 @@ a {
 				padding-top: 2em;
 				.avator {
 					position: absolute;
-					width: 2em;
-					height: 2em;
+					width: 2.5em;
+					height: 2.5em;
 					@include border-radius(100%);
 				}
 				.contact {
-					margin-left: 2.5em;
+					margin-left: 3em;
 					.name {
 						font-weight: bold;
 						margin-right: .5em;
