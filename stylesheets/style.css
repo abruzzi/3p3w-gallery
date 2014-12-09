@@ -378,23 +378,25 @@ a {
 }
 /* line 110, ../sass/style.scss */
 .hero p {
+  width: 70%;
+  margin: 0 auto;
   font-size: 2em;
   color: white;
-  padding: 0 8em 6em 8em;
+  padding: 0 0 6em 0;
   line-height: 1.4;
 }
-/* line 116, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .hero p .link {
   color: #3377ff;
 }
 
-/* line 122, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .cases {
   padding: 3em 0;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 125, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .cases h2 {
   color: #3377ff;
   font-size: 3em;
@@ -410,7 +412,7 @@ a {
   content: "";
   background-color: #dddddd;
 }
-/* line 134, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .cases li {
   float: left;
   width: 25%;
@@ -419,27 +421,27 @@ a {
   position: relative;
 }
 @media only screen and (max-width: 320px) {
-  /* line 134, ../sass/style.scss */
+  /* line 136, ../sass/style.scss */
   .cases li {
     float: none;
     width: 100%;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 1023px) {
-  /* line 134, ../sass/style.scss */
+  /* line 136, ../sass/style.scss */
   .cases li {
     width: 50%;
   }
 }
-/* line 150, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .cases li .case {
   width: 100%;
 }
-/* line 157, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 .cases li:hover .information {
   top: 0;
 }
-/* line 162, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .cases li .information {
   position: absolute;
   background-color: #3e3e3e;
@@ -454,19 +456,19 @@ a {
   box-sizing: border-box;
   color: white;
 }
-/* line 176, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .cases li .information h3 {
   font-size: 2em;
   padding: 1em 0;
 }
-/* line 181, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 .cases li .information .actions {
   text-align: center;
   width: 90%;
   margin: 0 auto;
   padding: 5em 0;
 }
-/* line 187, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 .cases li .information .actions span {
   font-size: 2em;
   display: inline-block;
@@ -479,18 +481,18 @@ a {
   transition: all .3s ease-in-out;
   cursor: pointer;
 }
-/* line 197, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 .cases li .information .actions span:hover {
   color: white;
   background-color: #3377ff;
   border: 1px solid #3377ff;
 }
-/* line 205, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 .cases li .information .detail {
   position: relative;
   padding-top: 2em;
 }
-/* line 208, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 .cases li .information .detail .avator {
   position: absolute;
   width: 2.5em;
@@ -499,33 +501,33 @@ a {
   -webkit-border-radius: 100%;
   border-radius: 100%;
 }
-/* line 214, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 .cases li .information .detail .contact {
   margin-left: 3em;
 }
-/* line 216, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 .cases li .information .detail .contact .name {
   font-weight: bold;
   margin-right: .5em;
 }
-/* line 221, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 .cases li .information .detail .contact .role {
   color: #dddddd;
 }
-/* line 225, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 .cases li .information .detail .contact .date {
   color: #dddddd;
   float: right;
 }
 
-/* line 237, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 footer {
   font-size: 2em;
   background-color: #2f2f2f;
   color: white;
   padding: 2em 0;
 }
-/* line 242, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 footer .link {
   color: #3377ff;
 }

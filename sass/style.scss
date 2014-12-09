@@ -108,9 +108,11 @@ a {
 	}
 
 	p {
+		width: 70%;
+		margin: 0 auto;
 		font-size: 2em;
 		color: white;
-		padding: 0 8em 6em 8em;
+		padding: 0 0 6em 0;
 		line-height: 1.4;
 
 		.link {
