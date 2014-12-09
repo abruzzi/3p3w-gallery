@@ -41,6 +41,7 @@ body {
 	font-size: 62.5%;
 	font-weight: normal;
 	text-align: center;
+	background-color: $light-text-color;
 	color: $text-color;
 	@include font-smoothing;
 }
@@ -52,7 +53,7 @@ body {
 		margin: .3em auto;
 		display: block;
 		content: "";
-		background-color: $light-text-color;
+		background-color: $text-color;
 	}	
 }
 
@@ -122,7 +123,7 @@ a {
 }
 
 .cases {
-	padding: 3em 0;
+	padding: 3em 0 6em 0;
 	
 	h2 {
 		color: $highlight-color;

@@ -315,46 +315,47 @@ body {
   font-size: 62.5%;
   font-weight: normal;
   text-align: center;
+  background-color: #dddddd;
   color: #3e3e3e;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 a {
   text-decoration: none;
   color: white;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 .hero {
   position: relative;
   background-color: #2f2f2f;
   z-index: 1;
 }
-/* line 68, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 .hero nav {
   padding: 2em;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 71, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 .hero nav li {
   float: left;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 73, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .hero nav li a {
   font-size: 2em;
   display: inline-block;
   padding: .5em 1em;
 }
-/* line 78, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .hero nav li a:hover {
   color: #3377ff;
 }
-/* line 88, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 .hero h1 {
   font-size: 8em;
   font-weight: normal;
@@ -362,7 +363,7 @@ a {
   text-transform: uppercase;
   color: white;
 }
-/* line 96, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 .hero:after {
   position: absolute;
   left: 0;
@@ -376,7 +377,7 @@ a {
   background-size: cover;
   z-index: -1;
 }
-/* line 110, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .hero p {
   width: 70%;
   margin: 0 auto;
@@ -385,34 +386,34 @@ a {
   padding: 0 0 6em 0;
   line-height: 1.4;
 }
-/* line 118, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 .hero p .link {
   color: #3377ff;
 }
 
-/* line 124, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 .cases {
-  padding: 3em 0;
+  padding: 3em 0 6em 0;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 127, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 .cases h2 {
   color: #3377ff;
   font-size: 3em;
   padding: 1em 0;
   text-transform: uppercase;
 }
-/* line 49, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .cases h2:after {
   width: 2em;
   height: .1em;
   margin: .3em auto;
   display: block;
   content: "";
-  background-color: #dddddd;
+  background-color: #3e3e3e;
 }
-/* line 136, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .cases li {
   float: left;
   width: 25%;
@@ -421,27 +422,27 @@ a {
   position: relative;
 }
 @media only screen and (max-width: 320px) {
-  /* line 136, ../sass/style.scss */
+  /* line 137, ../sass/style.scss */
   .cases li {
     float: none;
     width: 100%;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 1023px) {
-  /* line 136, ../sass/style.scss */
+  /* line 137, ../sass/style.scss */
   .cases li {
     width: 50%;
   }
 }
-/* line 152, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 .cases li .case {
   width: 100%;
 }
-/* line 159, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .cases li:hover .information {
   top: 0;
 }
-/* line 164, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 .cases li .information {
   position: absolute;
   background-color: #3e3e3e;
@@ -456,19 +457,19 @@ a {
   box-sizing: border-box;
   color: white;
 }
-/* line 178, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .cases li .information h3 {
   font-size: 2em;
   padding: 1em 0;
 }
-/* line 183, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 .cases li .information .actions {
   text-align: center;
   width: 90%;
   margin: 0 auto;
   padding: 5em 0;
 }
-/* line 189, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .cases li .information .actions span {
   font-size: 2em;
   display: inline-block;
@@ -481,18 +482,18 @@ a {
   transition: all .3s ease-in-out;
   cursor: pointer;
 }
-/* line 199, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .cases li .information .actions span:hover {
   color: white;
   background-color: #3377ff;
   border: 1px solid #3377ff;
 }
-/* line 207, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .cases li .information .detail {
   position: relative;
   padding-top: 2em;
 }
-/* line 210, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 .cases li .information .detail .avator {
   position: absolute;
   width: 2.5em;
@@ -501,33 +502,33 @@ a {
   -webkit-border-radius: 100%;
   border-radius: 100%;
 }
-/* line 216, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .cases li .information .detail .contact {
   margin-left: 3em;
 }
-/* line 218, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 .cases li .information .detail .contact .name {
   font-weight: bold;
   margin-right: .5em;
 }
-/* line 223, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .cases li .information .detail .contact .role {
   color: #dddddd;
 }
-/* line 227, ../sass/style.scss */
+/* line 228, ../sass/style.scss */
 .cases li .information .detail .contact .date {
   color: #dddddd;
   float: right;
 }
 
-/* line 239, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 footer {
   font-size: 2em;
   background-color: #2f2f2f;
   color: white;
   padding: 2em 0;
 }
-/* line 244, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 footer .link {
   color: #3377ff;
 }
